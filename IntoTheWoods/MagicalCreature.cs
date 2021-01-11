@@ -11,6 +11,7 @@ namespace IntoTheWoods
         private int strength;
         private string attackMethod1;
         private string attackMethod2;
+        private int gold = 25;
 
         public MagicalCreature(string name, int exp, int strength, string attackMethod1, string attackMethod2)
         {
@@ -25,12 +26,13 @@ namespace IntoTheWoods
         public int Exp { get => exp; set => exp = value; }
         public int Strength { get => strength; set => strength = value; }
         public string AttackMethod1 { get => attackMethod1; set => attackMethod1 = value; }
-        public string AttackMethod2 { get => attackMethod2; set => attackMethod2 = value; }       
+        public string AttackMethod2 { get => attackMethod2; set => attackMethod2 = value; }
+        public int Gold { get => gold; set => gold = value; }
 
         public string GetRandomAttack()
         {
             Random random = new Random();
-            int rand = random.Next(0, 2);
+            int rand = random.Next(2);
 
             if (rand == 0)
             {
@@ -42,6 +44,5 @@ namespace IntoTheWoods
             }
             else { return attackMethod1; }
         }
-
     }
 }

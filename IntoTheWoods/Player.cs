@@ -37,11 +37,20 @@ namespace IntoTheWoods
             Console.WriteLine($"* Level: {level}");
             Console.WriteLine($"* Hp: {hp}");
             Console.WriteLine($"* Exp: {exp}");
+            Console.WriteLine($"* Gold: {gold}");
             Console.WriteLine($"* Strength: {strength}");
             Console.WriteLine($"* Endurance: {endurance}");
             Console.WriteLine("******************");
         }
 
+        public void takeGold()
+        {
 
+        }
+
+        public void giveGold()
+        {
+
+        }
     }
 }
